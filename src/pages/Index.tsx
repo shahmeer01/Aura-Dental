@@ -123,11 +123,9 @@ const Index = () => {
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <motion.div 
-              whileHover={{ rotate: 180 }}
-              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground cursor-pointer"
+              className="w-8 h-8 flex items-center justify-center cursor-pointer"
             >
-              <Sparkles size={16} />
+              <img src="/aura-dental-logo.png" alt="Aura Dental" className="w-full h-full object-contain" />
             </motion.div>
             <span className="font-serif text-2xl font-medium tracking-tight">Aura Dental</span>
           </div>
@@ -166,7 +164,10 @@ const Index = () => {
             className="fixed inset-0 z-[60] bg-background flex flex-col p-6"
           >
             <div className="flex justify-between items-center mb-12">
-              <span className="font-serif text-2xl">Aura Dental</span>
+              <div className="flex items-center gap-2">
+                <img src="/aura-dental-logo.png" alt="Aura Dental" className="w-8 h-8 object-contain" />
+                <span className="font-serif text-2xl">Aura Dental</span>
+              </div>
               <button onClick={() => setMobileMenuOpen(false)}>
                 <X size={28} />
               </button>
@@ -798,8 +799,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-6">
-                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-primary-foreground">
-                  <Sparkles size={12} />
+                <div className="w-6 h-6 flex items-center justify-center">
+                  <img src="/aura-dental-logo.png" alt="Aura Dental" className="w-full h-full object-contain" />
                 </div>
                 <span className="font-serif text-xl font-medium tracking-tight">Aura Dental</span>
               </div>
